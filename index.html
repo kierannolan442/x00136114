@@ -4,27 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Overview</title>
+    <title>COVID - Overview</title>
     <!-- Importing Twitter Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     <style>
-      #navbar {
-        color: #323D0B;
+      .body {
+        background-color: #323D0B;
+      }
+      footer {
+        left: 0;
+          bottom: 0;
+          width: 100%;
+          background-color: #333333;
+          color: white;
+          text-align: center;
+          position: fixed;
+          margin-bottom: 0%;
       }
       #center {
         text-align:center;
-        margin-left: 20%;
+        margin-left: 8%;
       }
-      footer {
-        text-align: center;
-        line-height: 1.0;
+      #rightcenter {
+        border-radius: 25px;
+      }
+      #middlecenter {
+        border-radius: 25px;
+      }
+      #leftcenter {
+        border-radius: 25px;
       }
       .hero {
         text-align: center;
-      }
-      .btn {
-        background-color: #236AB9;
       }
     </style>
 </head>
@@ -48,9 +60,6 @@
               <a class="nav-link" href="analysis.html">Analysis</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="future.html">Future Work</a>
-              </li>
-            <li class="nav-item">
                 <a class="nav-link" href="about.html">About</a>
             </li>
           </ul>
@@ -63,36 +72,39 @@
           <p class="lead">Find out how the world is bouncing back from the pandemic here!</p>
           <hr class="my-4">
           <p class="lead">
-            <a class="btn btn-primary btn-lg" href="visualizations.html" role="button">Click here</a>
+            <a class="btn btn-primary btn-lg" href="analysis.html" role="button">Click here</a>
           </p>
         </div>
         <br><br><br><br>
-        
+        <p>
+          This website is dedicated to an analysis of the COVID 19 pandemic. 
+          Explore the site to find out some general statistics and some interesting insights!
+        </p>
   
         <!-- Example row of columns -->
         <div id="center" class="row">
-          <div class="col-sm-3">
+          <div id="leftcenter" class="col-sm-5">
             <h2>Statistics</h2>
             <p>
               See global statistics for the pandemic. 
             </p>
             <p><a class="btn" href="stats.html">View Graphs &raquo;</a></p>
           </div>
-          <div class="col-sm-3">
+          <div class="col-sm-1">
+
+          </div>
+          <div id="middlecenter" class="col-sm-5">
             <h2>Analysis</h2>
              <p>What does the data tell us? Check out these visualizations!</p>
             <p><a class="btn" href="analysis.html">View Data &raquo;</a></p>
          </div>
-          <div class="col-sm-3">
-            <h2>Future Work</h2>
-            <p>How can we use this work in the future? Find out here!</p>
-            <p><a class="btn" href="future.html">A Better Tommorow &raquo;</a></p>
-          </div>
+         <div class="col-sm-1">
+
+        </div>
         </div>
   
         <footer>
-          <p>Interactive Media Design</p>
-          <p>Kieran Nolan | X00136114</p>
+          <p>Interactive Media Design | Kieran Nolan | X00136114</p>
         </footer>
   
       </div> 
